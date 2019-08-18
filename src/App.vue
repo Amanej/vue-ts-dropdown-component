@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>Here will be the select component</p>
+    <!--<p>Here will be the select component</p>-->
     <Select :options="options" />
   </div>
 </template>
@@ -17,20 +17,20 @@ import Select from './components/Select/Select';
 export default class App extends Vue {
   public options = [
     {
-      name: "Banan",
+      name: 'Banan',
       pris: 20,
       id: 0,
     },
     {
-      name: "Eple",
+      name: 'Eple',
       pris: 15,
       id: 1,
     },
     {
-      name: "Pære",
+      name: 'Pære',
       pris: 12,
       id: 2,
-    }        
+    },
   ];
 }
 </script>
