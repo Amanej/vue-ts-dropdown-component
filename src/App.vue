@@ -1,20 +1,38 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <div>
+    <p>Here will be the select component</p>
+    <Select :options="options" />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from './components/HelloWorld.vue';
+import Select from './components/Select/Select';
 
 @Component({
   components: {
-    HelloWorld,
+    Select,
   },
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+  public options = [
+    {
+      name: "Banan",
+      pris: 20,
+      id: 0,
+    },
+    {
+      name: "Eple",
+      pris: 15,
+      id: 1,
+    },
+    {
+      name: "Pære",
+      pris: 12,
+      id: 2,
+    }        
+  ];
+}
 </script>
 
 <style lang="scss">
