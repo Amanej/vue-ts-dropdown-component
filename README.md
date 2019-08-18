@@ -1,5 +1,13 @@
 # dropdown
 
+Design: https://www.behance.net/gallery/10157651/Dropdown-Contact-Menu
+
+## Goals
+* HTML/SCSS Prototype
+* Vue TS Component
+* Unit Tests
+* Publish to NPM
+
 ## Project setup
 ```
 npm install
